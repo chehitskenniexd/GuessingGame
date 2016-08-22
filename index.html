@@ -2,29 +2,38 @@
 <html lang="en">
   <head>
     <title>Guessing Game</title>
+    <!--External reference to main.css-->
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
 
       <div id='app'>
 
-        <div id='headers'>
-          <!-- Title and subtitles! -->
-          <h1>Play the Guessing Game!<h1>
-          <p>Guess a number between 1 - 100!</p>
+        <div id='headers' class='center'>
+          <h1 id='title'>Play the Guessing Game!</h1>
+          <h3 id='subtitle'>Guess a number between 1 - 100!</h3>
         </div>
 
-        <div id='main'>
+        <div id='main' class='center'>
           <div id='input-parent'>
-            <!-- Player's guess input, and submit button -->
+            <!-- # when no text, max input len = 3, auto focus on input when page loads -->
+            <input placeholder="#" maxlength='3' autofocus="autofocus"></input>
+            <button>Submit</button>
           </div>
 
           <div id='guesses'>
-            <!-- unordered list of guesses -->
+            <ul>
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+            </ul>
           </div>
 
           <div id="menu-btns">
-            <!-- reset and hint buttons -->
+            <button>Reset</button>
+            <button>Hint</button>
           </div>
         </div>
       </div>
